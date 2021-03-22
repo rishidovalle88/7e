@@ -13,7 +13,10 @@ const Input = ({ title, name, styleW, ...rest }: InputProps) => {
         <div className={`column ${styleW}`}>
             <div className="field">
                 {/* <label className="label has-text-black"  >{title}</label> */}
-                <h6 className="is-small mb-1">{title}</h6>
+                {title !== "" && (
+                    <h6 className="is-small mb-1">{title}</h6>
+                )}
+                
                 <div className="control">
                     <input
                         className={rest.type === "text" || "password" || undefined ? "input" : "checkbox"}

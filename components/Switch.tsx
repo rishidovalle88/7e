@@ -12,7 +12,9 @@ const Switch = ({ title, name, styleW, ...rest }: SwitchProps) => {
     return (
         <div className={`column ${styleW}`}>
             <div className="field">
-                <h6 className="is-small">{title}</h6>
+                {title !== "" && (
+                    <h6 className="is-small mb-1">{title}</h6>
+                )}
                 <label className={`mt-1 ${styles.switch}`}>
                     <input
                         type="checkbox"

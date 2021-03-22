@@ -1,19 +1,27 @@
 import React from 'react'
 
-const Avatar = () => {
-    return (
-        <div className="avatar">
-            <figure className=""
-                style={{
-                    // marginTop: "-85px",
-                }}>
-                <img src="https://placehold.it/128x128"
-                    style={{
-                        borderRadius: "50%",
-                    }}
-                />
-            </figure>
+interface AvatarProps {
+    firstname: string;
+    lastname: string;
+}
 
+const Avatar = ({ firstname, lastname }: AvatarProps) => {
+    return (
+        <div className="has-text-centered" style={{
+            // marginTop: "-85px",
+        }}>
+            <img src="https://placehold.it/110x110"
+                style={{
+                    width: "110px",
+                    borderRadius: "50%",
+                }}
+            />
+            <h1 className="title">
+                {firstname}
+            </h1>
+            <h2 className="subtitle">
+                {lastname}
+            </h2>
         </div>
     )
 }

@@ -10,7 +10,10 @@ const Layout = ({ children }: LayoutProps) => {
     return (
         <>
             <Header />
-            {children}
+            <div className="container is-max-widescreen">
+                {children}
+            </div>
+
         </>
 
     )
