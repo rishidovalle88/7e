@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React, { ChangeEvent, useState } from 'react';
-import Avatar from '../components/Avatar';
 import Input from '../components/Input';
+import Link from 'next/link'
 
 interface LoginProps {
     username: string;
@@ -14,13 +14,35 @@ export default function Login(props: LoginProps) {
     function OnChange(e: ChangeEvent<HTMLInputElement>) {
         setUserProps({ ...userProps, [e.currentTarget.name]: e.currentTarget.value })
     }
+
+    const styles = {
+        section: {
+            // backgroundColor: '#6C63FF',
+            backgroundImage: 'url("./courses_wave_top.svg")',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            color: '#F5F5FF',
+        },
+        goHome: {
+            margin: '20px',
+            color: '#6C63FF',
+        }
+    }
+
     return (
         <>
             <Head>
                 <title>Login</title>
-            </Head>
+            </Head>           
 
-            <section className="hero is-fullheight">
+            <section className="hero is-fullheight" style={styles.section}>
+            <Link href="/">
+                <a style={styles.goHome}>
+                    <span>
+                        Ir para a página inicial
+                    </span>
+                </a>
+            </Link>
                 <div className="hero-body">
                     <div className="container">
                         <div className="column is-6 is-offset-3">

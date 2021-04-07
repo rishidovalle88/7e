@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Link from 'next/link'
 
 const Header = () => {
 
@@ -14,24 +15,48 @@ const Header = () => {
         setClassActive(menuIsActive ? "is-active" : "")
     }
 
+    const styles = {
+        burger: {
+            color: '#F5F5FF'
+        }
+    }
+
     return (
-        <nav className="navbar is-link">
+        <nav className="navbar" style={{ backgroundColor: '#6C63FF' }}>
             <div className="container">
                 <div className="navbar-brand">
                     <a className="navbar-item">
                         <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
                     </a>
                     <span className={`navbar-burger ${classIsActive}`} data-target="navbarMenuHeroA" onClick={e => activeMenu()}>
-                        <span />
-                        <span />
-                        <span />
+                        <span style={styles.burger} />
+                        <span style={styles.burger} />
+                        <span style={styles.burger} />
                     </span>
                 </div>
                 <div id="navbarMenuHeroA" className={`navbar-menu ${classIsActive}`}>
                     <div className="navbar-end">
-                        <a className="navbar-item">
-                            Sair
-                        </a>
+                        <div className="navbar-item">
+                            <div className="field is-grouped">
+                                <p className="control">
+                                    <Link href="/login">
+                                        <a className="bd-tw-button button">
+                                            <span>
+                                                Entrar
+                                        </span>
+                                        </a>
+                                    </Link>
+                                </p>
+                                <p className="control">
+                                    <Link href="/login">
+                                        <a className="button is-primary">
+                                            <span>Cadastrar</span>
+                                        </a>
+                                    </Link>
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

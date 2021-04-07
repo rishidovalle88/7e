@@ -1,4 +1,4 @@
-import React, { HTMLAttributes, InputHTMLAttributes } from 'react'
+import React, { InputHTMLAttributes, forwardRef } from 'react'
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
     title: string;
@@ -8,7 +8,7 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 
-const Input = ({ title, name, styleW, ...rest }: InputProps) => {
+const Input = ({ title, name, styleW, ...rest }: InputProps, ref) => {
     return (
         <div className={`column ${styleW}`}>
             <div className="field">
@@ -29,4 +29,5 @@ const Input = ({ title, name, styleW, ...rest }: InputProps) => {
     )
 }
 
+// export default forwardRef(Input)
 export default Input

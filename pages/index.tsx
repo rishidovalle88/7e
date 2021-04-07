@@ -1,65 +1,96 @@
 import Head from 'next/head'
+import { useState } from 'react'
+import Card from '../components/Card'
+import CardHome from '../components/CardHome'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+
+  const [cursos] = useState([1, 2, 3])
+
+  const styles = {
+    searchCourses: {
+      section: {
+        backgroundImage: 'url("./home_career.svg"), url("./courses_wave_top.svg")',
+        backgroundPosition: 'center, bottom',
+        backgroundRepeat: 'no-repeat'
+      },
+      box: {
+        opacity: '.95'
+      }
+    },
+    courses: {
+      // backgroundColor: '#6C63FF',
+      backgroundImage: 'url("./courses_wave.svg")',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      color: '#F5F5FF',
+    },
+
+    h1: {
+      fontSize: '2rem'
+    },
+    h2: {
+      fontSize: '1rem',
+      marginTop: '0.5rem',
+      marginBottom: '0.9rem',
+    },
+  }
+
+
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <>
+      <Header />
+      <section className="hero is-large"
+        style={styles.searchCourses.section}
+      >
+        <div className="hero-body is-mobile">
+          <div className="container has-text-centered">
+            <div className="box" style={styles.searchCourses.box}>
+              <h2 className="title is-2">Busque seu curso</h2>
+              <div className="field">
+                <input
+                  className="input is-large  has-text-centered"
+                  type="text"
+                  placeholder="Marketing"></input>
+              </div>
+              <div className="field">
+                <button className="button is-large">
+                  <span className="icon is-medium">
+                    <i className="fas fa-search"></i>
+                  </span>
+                  <span>Buscar</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
+      </section>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+      <section className="section" style={styles.courses}>
+        <div className="container">
+          <h1 style={styles.h1}>Cursos em destaque</h1>
+          <h2 style={styles.h2}>
+            Estes são os cursos que as pessoas estão mais procurando no momento
+          </h2>
+          <div className="columns is-multiline is-desktop is-centered">
+            {cursos.map(() => {
+              return (
+                <div className="column">
+                  <CardHome />
+                </div>
+              )
+            })}
+
+          </div>
+        </div>
+      </section>
+
+      <Footer/>
+
+
+    </>
   )
 }
