@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { QuizContext } from '../../pages/contexts/QuizContext'
+import { QuizContext } from '../../contexts/QuizContext'
 import Button from '../Button'
 import Input from '../Input'
 import QuizQuestion from './QuizQuestion'

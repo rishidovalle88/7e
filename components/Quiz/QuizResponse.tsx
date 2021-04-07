@@ -1,5 +1,5 @@
 import React, { ChangeEvent, MouseEvent, useContext, useState } from 'react'
-import { QuizContext } from '../../pages/contexts/QuizContext'
+import { QuizContext } from '../../contexts/QuizContext'
 import Button from '../Button'
 import Input from '../Input'
 import Switch from '../Switch'

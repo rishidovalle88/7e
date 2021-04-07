@@ -7,7 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Divider from '../../components/Divider'
 import Modal from '../../components/Modal'
-import { QuizContext, QuizProvider } from '../contexts/QuizContext'
+import { QuizContext, QuizProvider } from '../../contexts/QuizContext'
 import QuizResponse from '../../components/Quiz/QuizResponse'
 import QuizQuestion from '../../components/Quiz/QuizQuestion'
 import QuizMain from '../../components/Quiz/QuizMain'
