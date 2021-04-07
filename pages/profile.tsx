@@ -13,7 +13,7 @@ export default function Profile() {
                 <div className="hero-body has-text-centered">
                     <div className="columns is-mobile">
                         <div className="column is-half is-offset-one-quarter">
-                            <Avatar />
+                            {/* <Avatar /> */}
                         </div>
                     </div>
 
