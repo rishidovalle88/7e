@@ -11,18 +11,18 @@ const Card = (props: CardProps) => {
     return (
         <div className="card">
             <div className="card-content has-text-centered">
-                <span className="icon is-medium">
+                <span className="icon">
                     <span className="fa-stack fa-sm">
                         <i className={`${props.icon} fa-stack-2x`} />
                     </span>
                 </span>
 
-                <p className="title">
+                <p className="s-size-1-mobile has-text-weight-bold">
                     {props.title}
                 </p>
-                <p className="subtitle">
+                {/* <p className="s-size-2-mobile">
                     {props.subtitle}
-                </p>
+                </p> */}
             </div>
             <footer className="card-footer">
                 <p className="card-footer-item">

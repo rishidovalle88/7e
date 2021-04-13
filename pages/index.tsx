@@ -8,7 +8,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
 
-  const [cursos] = useState([1, 2, 3])
+  const [cursos] = useState([1,2,3])
 
   const styles = {
     searchCourses: {
@@ -18,7 +18,7 @@ export default function Home() {
         backgroundRepeat: 'no-repeat'
       },
       box: {
-        opacity: '.95'
+        opacity: '.99'
       }
     },
     courses: {
@@ -43,52 +43,56 @@ export default function Home() {
   return (
     <>
       <Header />
-      <section className="hero is-large"
-        style={styles.searchCourses.section}
-      >
-        <div className="hero-body is-mobile">
-          <div className="container has-text-centered">
-            <div className="box" style={styles.searchCourses.box}>
-              <h2 className="title is-2">Busque seu curso</h2>
-              <div className="field">
-                <input
-                  className="input is-large  has-text-centered"
-                  type="text"
-                  placeholder="Marketing"></input>
-              </div>
-              <div className="field">
-                <button className="button is-large">
-                  <span className="icon is-medium">
-                    <i className="fas fa-search"></i>
-                  </span>
-                  <span>Buscar</span>
-                </button>
+      
+      <main>
+        <section className="hero is-large"
+          style={styles.searchCourses.section}
+        >
+          <div className="hero-body is-mobile">
+            <div className="container has-text-centered">
+              <div className="box" style={styles.searchCourses.box}>
+                <h2 className="title">Busque seu curso</h2>
+                <div className="field">
+                  <input
+                    className="input is-large  has-text-centered"
+                    type="text"
+                    placeholder="Marketing..."></input>
+                </div>
+                <div className="field">
+                  <button className="button is-large">
+                    <span className="icon is-medium">
+                      <i className="fas fa-search"></i>
+                    </span>
+                    <span>Buscar</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="section" style={styles.courses}>
-        <div className="container">
-          <h1 style={styles.h1}>Cursos em destaque</h1>
-          <h2 style={styles.h2}>
-            Estes são os cursos que as pessoas estão mais procurando no momento
+        <section className="section" style={styles.courses}>
+          <div className="container">
+            <h1 style={styles.h1}>Cursos em destaque</h1>
+            <h2 style={styles.h2}>
+              Estes são os cursos que as pessoas estão mais procurando no momento
           </h2>
-          <div className="columns is-multiline is-desktop is-centered">
-            {cursos.map(() => {
-              return (
-                <div className="column">
-                  <CardHome />
-                </div>
-              )
-            })}
+            <div className="columns is-multiline is-desktop is-centered">
+              {cursos.map(() => {
+                return (
+                  <div className="column">
+                    <CardHome />
+                  </div>
+                )
+              })}
 
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <Footer/>
+        <Footer />
+      </main>
+
 
 
     </>

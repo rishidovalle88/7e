@@ -22,12 +22,15 @@ const Header = () => {
     }
 
     return (
-        <nav className="navbar" style={{ backgroundColor: '#6C63FF' }}>
+
+        <nav className="navbar is-light">
             <div className="container">
+
                 <div className="navbar-brand">
                     <a className="navbar-item">
-                        <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
+                        <img src="https://bulma.io/images/bulma-logo.png" alt="Logo" />
                     </a>
+
                     <span className={`navbar-burger ${classIsActive}`} data-target="navbarMenuHeroA" onClick={e => activeMenu()}>
                         <span style={styles.burger} />
                         <span style={styles.burger} />
@@ -35,7 +38,7 @@ const Header = () => {
                     </span>
                 </div>
                 <div id="navbarMenuHeroA" className={`navbar-menu ${classIsActive}`}>
-                    <div className="navbar-end">
+                    <div className="navbar-end">                    
                         <div className="navbar-item">
                             <div className="field is-grouped">
                                 <p className="control">
@@ -48,7 +51,7 @@ const Header = () => {
                                     </Link>
                                 </p>
                                 <p className="control">
-                                    <Link href="/login">
+                                    <Link href="/register">
                                         <a className="button is-primary">
                                             <span>Cadastrar</span>
                                         </a>
@@ -58,7 +61,7 @@ const Header = () => {
                         </div>
 
                     </div>
-                </div>
+                </div>                
             </div>
         </nav>
 

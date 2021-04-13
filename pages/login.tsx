@@ -33,16 +33,19 @@ export default function Login(props: LoginProps) {
         <>
             <Head>
                 <title>Login</title>
-            </Head>           
+            </Head>
 
             <section className="hero is-fullheight" style={styles.section}>
-            <Link href="/">
-                <a style={styles.goHome}>
-                    <span>
-                        Ir para a página inicial
-                    </span>
-                </a>
-            </Link>
+                <Link href="/">
+                    <a style={styles.goHome}>
+                        <div className="icon-text">
+                            <span className="icon has-text-info">
+                                <i className="fas fa-arrow-left"></i>
+                            </span>
+                            <span>Ir para a página inicial</span>
+                        </div>
+                    </a>
+                </Link>
                 <div className="hero-body">
                     <div className="container">
                         <div className="column is-6 is-offset-3">

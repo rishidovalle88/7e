@@ -5,7 +5,7 @@ const MyProgress = () => {
         <div className="box" style={{
             // marginTop: "-50px",
         }}>
-            <div className="columns is-multiline is-mobile p-4">
+            <div className="columns is-multiline is-mobile p-1">
                 <div className="column is-12 has-text-centered mb-3">
                     <div className="title">Meu progresso</div>
                 </div>
