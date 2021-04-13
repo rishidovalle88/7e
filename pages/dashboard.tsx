@@ -11,8 +11,7 @@ import Table from '../components/Table'
 const Dashboard = () => {
     const [cursos] = useState([])
     return (
-        <Layout>
-            <NavbarMenu />
+        <Layout>            
 
             <section className="section">
                 <div className="columns is-mobile is-desktop is-vcentered">

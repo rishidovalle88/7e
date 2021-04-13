@@ -4,6 +4,7 @@ import Input from '../components/Input';
 import Link from 'next/link'
 import { PhoneMask, ValidateEmail } from '../Helpers/Validators'
 import { useForm, Controller } from "react-hook-form";
+import GoHome from '../components/GoHome';
 
 interface LoginProps {
     name: string;
@@ -22,7 +23,7 @@ export default function Register() {
 
     function OnChange(e: ChangeEvent<HTMLInputElement> | FocusEvent<HTMLInputElement>) {
         if (e.currentTarget.name === 'phone') {
-           PhoneMask(e.currentTarget.value, e)           
+            PhoneMask(e.currentTarget.value, e)
         }
 
         if (e.currentTarget.name === 'email') {
@@ -55,10 +56,6 @@ export default function Register() {
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             color: '#F5F5FF',
-        },
-        goHome: {
-            margin: '20px',
-            color: '#6C63FF',
         }
     }
 
@@ -69,13 +66,7 @@ export default function Register() {
             </Head>
             {/* {Object.keys(userProps).map((item) => { return (typeof item) })} */}
             <section className="hero is-fullheight" style={styles.section}>
-                <Link href="/">
-                    <a style={styles.goHome}>
-                        <span>
-                            Ir para a página inicial
-                    </span>
-                    </a>
-                </Link>
+                <GoHome />
                 <div className="hero-body">
                     <div className="container">
                         <div className="column is-6 is-offset-3">
@@ -133,7 +124,7 @@ export default function Register() {
                                         name="password"
                                         title="Digite sua senha"
                                         placeholder="**********"
-                                        value={userProps?.password  || ""}
+                                        value={userProps?.password || ""}
                                         onChange={e => OnChange(e)}
                                     />
                                     <Input

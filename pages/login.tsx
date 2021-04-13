@@ -2,6 +2,7 @@ import Head from 'next/head';
 import React, { ChangeEvent, useState } from 'react';
 import Input from '../components/Input';
 import Link from 'next/link'
+import GoHome from '../components/GoHome';
 
 interface LoginProps {
     username: string;
@@ -22,10 +23,6 @@ export default function Login(props: LoginProps) {
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             color: '#F5F5FF',
-        },
-        goHome: {
-            margin: '20px',
-            color: '#6C63FF',
         }
     }
 
@@ -36,16 +33,7 @@ export default function Login(props: LoginProps) {
             </Head>
 
             <section className="hero is-fullheight" style={styles.section}>
-                <Link href="/">
-                    <a style={styles.goHome}>
-                        <div className="icon-text">
-                            <span className="icon has-text-info">
-                                <i className="fas fa-arrow-left"></i>
-                            </span>
-                            <span>Ir para a página inicial</span>
-                        </div>
-                    </a>
-                </Link>
+                <GoHome/>
                 <div className="hero-body">
                     <div className="container">
                         <div className="column is-6 is-offset-3">
@@ -81,9 +69,11 @@ export default function Login(props: LoginProps) {
                                     <button className="button is-block is-success is-fullwidth">Entrar <i className="fa fa-sign-in" aria-hidden="true" /></button>
                                 </form>
                                 <p className="has-text-grey has-text-centered">
-                                    <a href="../">Cadastre-se</a> &nbsp;·&nbsp;
-                            <a href="../">Esqueci minha senha</a>
-
+                                    <Link href="/register">
+                                        <a href="../">Cadastre-se</a>
+                                    </Link>
+                                     &nbsp;·&nbsp;
+                                    <a href="../">Esqueci minha senha</a>
                                 </p>
                             </div>
 
