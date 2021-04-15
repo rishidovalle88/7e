@@ -4,9 +4,8 @@ import Divider from '../components/Divider'
 import Layout from '../components/Layout'
 import MyProgress from '../components/MyProgress'
 import CardHome from '../components/CardHome'
-import NavbarMenu from '../components/NavbarMenu'
-import Card from '../components/Card'
 import Table from '../components/Table'
+import Card from '../components/Card/Card'
 
 const Dashboard = () => {
     const [cursos] = useState([])
@@ -72,26 +71,21 @@ const Dashboard = () => {
                     <div className="column">
                         <Card
                             icon="fas fa-edit"
-                            title="Quizzes"
+                            title="Jogar Quizzes"
                             subtitle="Responder aos quizzes disponibilizados pelo tutor"
                             link="teste.com"
                         />
                     </div>
                     <div className="column">
+                        
                         <Card
                             icon="fas fa-newspaper"
-                            title="Artigos"
+                            title="Ler Posts"
                             subtitle="Textos de apoio"
                             link="teste.com"
                         />
-                    </div>
-                    <div className="column">
-                        <Card
-                            icon="fas fa-file-invoice"
-                            title="Documentação"
-                            subtitle="Documentações disponibilizadas pelo tutor"
-                            link="teste.com"
-                        />
+                        
+                        
                     </div>
 
                 </div>

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useState } from 'react'
-import Card from '../components/Card'
+import Card from '../components/Card/Card'
 import CardHome from '../components/CardHome'
 import Footer from '../components/Footer'
 import Header from '../components/Header'

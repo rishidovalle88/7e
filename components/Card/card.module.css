@@ -1,0 +1,8 @@
+
+.cardHover {
+    transition: margin .2s;
+}
+.cardHover:hover{
+    margin-left: 5px;
+    margin-right: 5px;
+}
