@@ -1,5 +1,5 @@
 import { ChangeEvent, createContext, Dispatch, MouseEvent, ReactNode, SetStateAction, useState } from 'react'
-import { Quiz, Question, Response } from '../models/Quiz'
+import { Quiz, Question, Response } from '../models/QuizModel'
 import { ToastContainer, toast } from 'react-toastify';
 
 interface QuizContextData {

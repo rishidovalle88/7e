@@ -1,24 +1,24 @@
-import React, { InputHTMLAttributes } from 'react'
-
+import React, { InputHTMLAttributes, useState } from 'react'
 interface InputButtonProps extends InputHTMLAttributes<HTMLInputElement> {
-    label:string;
-    type:string;
-    action:string;
-    fn?: () => void;    
+    label: string;
+    type: string;
+    action: string;
+    fn?: () => void;
 }
-const InputButton = ({label, type, action, fn, ...rest}:InputButtonProps) => {
+
+const InputButton = ({ label, type, action, fn, ...rest }: InputButtonProps) => {
     return (
         <div className="column is-12">
             <label className="label">{label}</label>
             <div className="field has-addons">
                 <div className="control is-expanded">
-                    <input className="input" type={type} 
-                    {...rest}
+                    <input className="input" type={type}
+                        {...rest}
                     />
                 </div>
                 <div className="control">
                     <a className="button has-text-light has-background-success-dark"
-                    onClick={e => fn}>
+                        onClick={e => fn}>
                         {action}
                     </a>
                 </div>
@@ -32,30 +32,30 @@ const Account = () => {
         <form className="box">
             <p className="title">Meus dados</p>
             <div className="columns is-multiline">
-                <InputButton 
+                <InputButton
                     label="Nome"
                     type="text"
-                    action="Alterar"                    
+                    action="Alterar"
                 />
-                <InputButton 
+                <InputButton
                     label="E-mail"
                     type="email"
-                    action="Alterar"                    
+                    action="Alterar"
                 />
-                <InputButton 
+                <InputButton
                     label="Telefone"
                     type="text"
-                    action="Alterar"                    
+                    action="Alterar"
                 />
-                <InputButton 
+                <InputButton
                     label="Senha"
                     type="password"
-                    action="Alterar"                    
+                    action="Alterar"
                 />
-                <InputButton 
-                    label="CPG/CNPJ"
+                <InputButton
+                    label="CPF/CNPJ"
                     type="text"
-                    action="Alterar"                    
+                    action="Alterar"
                 />
             </div>
         </form>

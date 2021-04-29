@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 
-const Header = () => {
+const HeaderOld = () => {
 
     const [menuIsActive, setMenuIsActive] = useState(true)
     const [classIsActive, setClassActive] = useState("");
@@ -17,7 +17,7 @@ const Header = () => {
 
     const styles = {
         burger: {
-            color: '#F5F5FF'
+            color: '#F5F5F5'
         }
     }
 
@@ -68,4 +68,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default HeaderOld

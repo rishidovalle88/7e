@@ -2,7 +2,7 @@ import React, { ChangeEvent, useContext, useState } from 'react'
 import { QuizContext } from '../../contexts/QuizContext'
 import QuizResponse from './QuizResponse'
 import Button from '../Button'
-import { Question } from '../../models/Quiz'
+import { Question } from '../../models/QuizModel'
 import Divider from '../Divider'
 import { toast } from 'react-toastify';
 import Modal from '../Modal'
@@ -77,7 +77,7 @@ const QuizQuestion = () => {
     function HandleValidateQuestion(isUpdate: boolean = false) {
 
         if (isUpdate) {
-            var duplicateTitle = Enumerable.from(questions).where(q => q.title === question.title).count()
+            var duplicateTitle = Enumerable.from(questions).where(q => q.title === question.title && q.id !== question.id).count()
             if (duplicateTitle > 0) {
                 toast.error("Já existe uma questão com este mesmo titulo")
                 return false;

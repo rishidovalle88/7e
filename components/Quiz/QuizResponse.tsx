@@ -3,7 +3,7 @@ import { QuizContext } from '../../contexts/QuizContext'
 import Button from '../Button'
 import Input from '../Input'
 import Switch from '../Switch'
-import { Response } from '../../models/Quiz'
+import { Response } from '../../models/QuizModel'
 import { toast } from 'react-toastify';
 
 const QuizResponse = () => {
