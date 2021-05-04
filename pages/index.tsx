@@ -78,9 +78,9 @@ export default function Home() {
               Estes são os cursos que as pessoas estão mais procurando no momento
           </h2>
             <div className="columns is-multiline is-desktop is-centered">
-              {cursos.map(() => {
+              {cursos.map((item) => {
                 return (
-                  <div className="column">
+                  <div key={item} className="column">
                     <CardHome />
                   </div>
                 )

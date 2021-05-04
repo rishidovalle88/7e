@@ -8,7 +8,7 @@ const Header = () => {
                 <a>
                     <img src="https://bulma.io/images/bulma-logo.png" alt="Logo" />
                 </a>
-            </div>
+            </div>           
             <ul>
                 {/* <li><a className={styles.active} href="">Home</a></li>
                 <li><a href="">Perfil</a></li>

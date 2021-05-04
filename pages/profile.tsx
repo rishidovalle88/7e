@@ -11,16 +11,18 @@ export default function Profile() {
                 <title>Minha conta</title>
             </Head>
             <ProfileProvider>
-                <div className="tile">
-                    <div className="tile is-parent">
-                        <article className="tile is-child">
-                            <div className="content">
-                                <Address />
-                                <Account />
-                            </div>
-                        </article>
+                <section className="section">
+                    <div className="tile">
+                        <div className="tile is-parent">
+                            <article className="tile is-child">
+                                <div className="content">
+                                    <Address />
+                                    <Account />
+                                </div>
+                            </article>
+                        </div>
                     </div>
-                </div>
+                </section>
             </ProfileProvider>
         </Layout>
 
