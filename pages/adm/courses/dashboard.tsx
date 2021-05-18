@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React, { useState } from 'react'
 import CourseCrud from '../../../components/Course/CourseCrud'
 import CourseDashboard from '../../../components/Course/CourseDashboard'
@@ -11,7 +12,7 @@ interface Menu {
     component?: React.ReactElement
 }
 
-const Courses = () => {
+const Dashboard = () => {
     const menuList = [
         {
             id: "crud",
@@ -27,20 +28,28 @@ const Courses = () => {
         },
     ]
 
-    const [menuActive, setMenuActive] = useState<Menu>();
+    const [menuActive, setMenuActive] = useState<Menu>({} as Menu);
 
-    function HandleChoiceMenu(id:string) {
-        let _menu = menuList.find(m => m.id === id );
-        setMenuActive({...menuActive, component: _menu.component, id: _menu.id})
+    function HandleChoiceMenu(id: string) {
+        let _menu = menuList.find(m => m.id === id);
+        setMenuActive({ ...menuActive, component: _menu.component, id: _menu.id })
     }
 
     return (
         <Layout>
             <section className="section">
                 <h1 className="title">Curso</h1>
-                <h2 className="subtitle">O que deseja fazer?</h2>
+                <nav className="breadcrumb" aria-label="breadcrumbs">
+                    <ul>
+                        <li>
+                            <a>Curso</a>
+                        </li>
+                        <li className="is-active"><a href="#">Dashboard</a></li>
+                    </ul>
+                </nav>
             </section>
 
+            {/* 
             <div className="columns is-multiline is-mobile">
 
                 <div className={`column has-text-centered ${menuActive.id === "crud" && styles.isActive}`} >
@@ -75,11 +84,11 @@ const Courses = () => {
                 </div>
             </div>
 
-            {menuActive?.component}
+            {menuActive?.component} */}
 
 
         </Layout>
     )
 }
 
-export default Courses
+export default Dashboard

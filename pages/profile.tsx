@@ -6,10 +6,7 @@ import { ProfileProvider } from "../contexts/ProfileContext";
 
 export default function Profile() {
     return (
-        <Layout>
-            <Head>
-                <title>Minha conta</title>
-            </Head>
+        <Layout title="Minha conta">
             <ProfileProvider>
                 <section className="section">
                     <div className="tile">

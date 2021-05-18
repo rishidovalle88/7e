@@ -10,7 +10,7 @@ import Card from '../components/Card/Card'
 const Dashboard = () => {
     const [cursos] = useState([])
     return (
-        <Layout>            
+        <Layout title="Página Inicial">            
 
             <section className="section">
                 <div className="columns is-mobile is-desktop is-vcentered">

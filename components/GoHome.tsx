@@ -13,7 +13,7 @@ const GoHome = () => {
         <Link href="/">
             <a style={styles.goHome}>
                 <div className="icon-text">
-                    <span className="icon" style={{ marginTop: '3px' }}>
+                    <span className="icon" style={{ marginTop: '1px' }}>
                         <i className="fas fa-arrow-left"></i>
                     </span>
                     <span>Ir para a página inicial</span>

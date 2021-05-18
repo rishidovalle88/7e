@@ -1,0 +1,22 @@
+.list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.truncate {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .hover{
+    transition: .5s;
+  }
+
+  .hover:hover{
+      
+      padding: 10px;
+      margin: 10px;
+  }

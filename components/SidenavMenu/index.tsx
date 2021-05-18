@@ -52,21 +52,22 @@ const SidenavMenu = ({ children }: SidenavBarProps) => {
             subMenu: []
         },
         {
-            title: "Cursos",
+            title: "Curso",
             icon: <i className="fas fa-user" />,
             isActiveUrl: useRouter().pathname.includes("/adm/courses"),
             url: "/adm/courses",
             subMenu: [
-                // {
-                //     title: "Adicionar",
-                //     isActive: "/adm/courses#a" === useRouter().pathname,
-                //     url: "/adm/courses#a"
-                // },
-                // {
-                //     title: "Listar",
-                //     isActive: "/adm/courses#c" === useRouter().pathname,
-                //     url: "/adm/courses#c"
-                // }
+                {
+                    title: "Dashboard",
+                    isActive: "/adm/courses/dashboard" === useRouter().pathname,
+                    url: "/adm/courses/dashboard"
+                },
+                {
+                    title: "Adm",
+                    isActive: "/adm/courses/adm" === useRouter().pathname,
+                    url: "/adm/courses/adm"
+                }
+                
             ]
         },
     ]

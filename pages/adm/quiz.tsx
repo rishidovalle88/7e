@@ -6,7 +6,7 @@ import QuizMain from '../../components/Quiz/QuizMain'
 const QuizAdd = () => {
 
     return (
-        <Layout>
+        <Layout title="Admin. Quizzes">
             <QuizProvider>
                 <section className="section">
                     <h1 className="title">Adicionar quiz</h1>
