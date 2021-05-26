@@ -1,8 +1,5 @@
-import { ChangeEvent, createContext, Dispatch, MouseEvent, ReactNode, SetStateAction, useState } from 'react'
+import { createContext, Dispatch, ReactNode, SetStateAction, useState } from 'react'
 import { Course, Module, Class } from '../models/CourseModel';
-import { toast } from 'react-toastify';
-import classes from '*.module.css';
-
 interface CourseContextData {
     course: Course;
     module: Module;
@@ -27,6 +24,8 @@ interface CourseContextData {
     setIsInModule: Dispatch<SetStateAction<boolean>>;
     isInAula: boolean;
     setIsInAula: Dispatch<SetStateAction<boolean>>;
+    isEditModuleClass: boolean;
+    setIsEditModuleClass: Dispatch<SetStateAction<boolean>>;
 }
 
 interface CourseProviderProps {
@@ -48,7 +47,8 @@ export const CourseProvider = ({ children }: CourseProviderProps) => {
     const [showFormCourse, setShowFormCourse] = useState(false);
     const [isEdit, setIsEdit] = useState(false);
     const [isEditModule, setIsEditModule] = useState(false);
-
+    const [isEditModuleClass, setIsEditModuleClass] = useState(false);
+    
 
     //Em status true, o componente de CRUD de módulos se abrirá
     const [isInModule, setIsInModule] = useState(false);
@@ -92,6 +92,7 @@ export const CourseProvider = ({ children }: CourseProviderProps) => {
             ClearCourseData,
             isInModule, setIsInModule,
             isInAula, setIsInAula,
+            isEditModuleClass, setIsEditModuleClass
         }}>
             {children}
         </CourseContext.Provider>

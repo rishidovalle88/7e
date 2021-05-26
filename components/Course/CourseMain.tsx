@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { CourseContext } from '../../contexts/CourseContext';
 import CourseCrud from './CourseCrud'
+import CourseModuleClassCrud from './CourseModuleClassCrud';
 import CourseModuleCrud from './CourseModuleCrud'
 
 const CourseMain = () => {
@@ -21,7 +22,7 @@ const CourseMain = () => {
 
             {/* Bloco de Aulas */}
             {(isInModule && isInAula) && (
-                <h1>Bloco de aulas</h1>
+                <CourseModuleClassCrud />
             )}
         </>
     )
