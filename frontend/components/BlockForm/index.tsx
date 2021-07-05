@@ -17,7 +17,7 @@ const BlockForm = () => {
                 <div className={`${styles.bg} col col-xs-12 col-md-7 d-flex justify-content-center align-items-center`}>
                     <form className={`bg-white p-5 shadow-lg`}> 
                         <div className="mb-3">
-                            <label htmlFor="email" className="form-label">Email address</label>
+                            <label htmlFor="email" className="form-label">Email</label>
                             <input type="email" className="form-control" id="email" aria-describedby="emailHelp" />
                             <div id="emailHelp" className="form-text">Nós nunca compartilharemos seu email com ninguém!</div>
                         </div>
@@ -26,7 +26,7 @@ const BlockForm = () => {
                             <input type="text" className="form-control" id="phone" />
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="message" className="form-label">Example textarea</label>
+                            <label htmlFor="message" className="form-label">Mensagem</label>
                             <textarea className="form-control" id="message" rows={3} defaultValue={""} />
                         </div>
 

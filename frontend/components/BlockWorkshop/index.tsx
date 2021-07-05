@@ -11,28 +11,34 @@ const BlockWorkshop = () => {
 
     const [ws, setWs] = useState<BlockWorkshopPros[]>([
         {
-            title: "teste",
-            description: "teste",
+            title: "Gestão de Tempo",
+            description: "Organização de tempo, definição de prioridades e técnicas de Gestão de tempo.",
             url: 'teste'
         },
         {
-            title: "teste",
-            description: "teste",
+            title: " Marketing",
+            description: "A arte de transformar seu produto em desejo, antes de ser vendido.",
             url: 'teste'
         },
         {
-            title: "teste",
-            description: "teste",
+            title: "Entendendo a Reprogramação",
+            description: " A PNL permite compreender o funcionamento interno dos nossos modelos mentais. Com técnicas e ferramentas podemos REPROGRAMAR nossas estruturas internas.",
             url: 'teste'
         },
         {
-            title: "teste",
-            description: "teste",
+            title: "Compreendendo  Padrões Comportamentais",
+            description: "Comportamentos que tendem a ser repetidos e nos levam as mesmas situções em diferentes areas da vida. Como identifica-los",
             url: 'teste'
         },
         {
-            title: "teste",
-            description: "teste",
+            title: "Conheça o Método SAPIENS",
+            description: "Metódologia desenvolvida para POTENCIALIZAR seus RESULTADOS.",
+            url: 'teste'
+            
+        },
+        {
+            title: "Cursos de Qualificação Profissional e Pessoal",
+            description: "Conheça nossa plataforma de Cursos",
             url: 'teste'
         },
     ])
