@@ -1,0 +1,15 @@
+.bg{
+    background-image: url(../../public/undraw_Browsing_online_re_umsa.svg), url(../../public/undraw_online_message_re_3m5v.svg);
+    background-repeat: no-repeat;
+    background-position: left, right;
+}
+
+.btnSend {
+    background-color: #CA9E19;
+    color: white;
+} 
+
+.btnSend:hover {
+    background-color: #3B3B3B;
+    color: #CA9E19;
+} 

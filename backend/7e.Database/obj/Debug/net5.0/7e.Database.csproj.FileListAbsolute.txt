@@ -1,0 +1,5 @@
+C:\Users\rishi\source\repos\7e\backend\7e.Database\obj\Debug\net5.0\7e.Database.csproj.AssemblyReference.cache
+C:\Users\rishi\source\repos\7e\backend\7e.Database\obj\Debug\net5.0\7e.Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rishi\source\repos\7e\backend\7e.Database\obj\Debug\net5.0\7e.Database.AssemblyInfoInputs.cache
+C:\Users\rishi\source\repos\7e\backend\7e.Database\obj\Debug\net5.0\7e.Database.AssemblyInfo.cs
+C:\Users\rishi\source\repos\7e\backend\7e.Database\obj\Debug\net5.0\7e.Database.csproj.CoreCompileInputs.cache

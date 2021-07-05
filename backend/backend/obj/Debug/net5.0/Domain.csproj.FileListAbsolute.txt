@@ -1,0 +1,11 @@
+C:\Users\rishi\source\repos\7e\backend\backend\bin\Debug\net5.0\Domain.deps.json
+C:\Users\rishi\source\repos\7e\backend\backend\bin\Debug\net5.0\Domain.dll
+C:\Users\rishi\source\repos\7e\backend\backend\bin\Debug\net5.0\ref\Domain.dll
+C:\Users\rishi\source\repos\7e\backend\backend\bin\Debug\net5.0\Domain.pdb
+C:\Users\rishi\source\repos\7e\backend\backend\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rishi\source\repos\7e\backend\backend\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+C:\Users\rishi\source\repos\7e\backend\backend\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+C:\Users\rishi\source\repos\7e\backend\backend\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\rishi\source\repos\7e\backend\backend\obj\Debug\net5.0\Domain.dll
+C:\Users\rishi\source\repos\7e\backend\backend\obj\Debug\net5.0\ref\Domain.dll
+C:\Users\rishi\source\repos\7e\backend\backend\obj\Debug\net5.0\Domain.pdb
