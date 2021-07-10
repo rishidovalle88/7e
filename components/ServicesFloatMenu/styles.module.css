@@ -1,0 +1,12 @@
+.fixed {
+    position: fixed;
+    top: 50%;
+    left: 40px;
+    z-index:1;
+  }
+
+  @media (max-width: 900px) {
+    .fixed{
+      display: none;
+    }
+  }

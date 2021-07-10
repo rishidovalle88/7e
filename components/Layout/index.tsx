@@ -45,7 +45,7 @@ const Layout = ({ title, children }: LayoutProps) => {
 
             {/* {isAuth && (<NavbarMenu />)} */}
 
-            <Footer />
+            {/* <Footer /> */}
         </>
 
     )

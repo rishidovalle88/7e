@@ -1,0 +1,24 @@
+.firstBlock {
+    height: calc(100% + 70px);
+    border: none;
+    /* margin-top: -1%; */
+    margin: auto;
+    /* width: 100vw; */
+    background-image: url(../../public/wave-gold-down.svg);
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.partinerApresentation {
+    /* height: calc(100vh - 70px); */
+    /* background-color: #3B3B3B; */
+    color: rgba(59, 59, 59, 1);
+}
+
+.whyPartiner {
+    /* background-color: rgba(59, 59, 59, .1); */
+    border-radius: 5px;
+}

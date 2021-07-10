@@ -1,0 +1,8 @@
+.blockHowBePartnerImg{
+    background-color: #5C636A;
+    background-image: url(../../public/undraw_professor_8lrt.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    height: 300px;
+}

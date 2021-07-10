@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router';
 import React, { MouseEvent, useState } from 'react'
 import styles from './menu-responsivo.module.css'
 
@@ -7,7 +8,7 @@ const Header = () => {
     const [active, setActive] = useState(false);
 
 
-    function toggleMenu(event: MouseEvent<HTMLButtonElement>) {        
+    function toggleMenu(event: MouseEvent<HTMLButtonElement>) {
         if (event.type === 'touchstart') event.preventDefault();
         setActive(!active)
         // const nav = document.getElementById('nav');        
@@ -26,17 +27,34 @@ const Header = () => {
     return (
         <header id={styles.header}>
             <a id={styles.logo}>
-            <img className="align-middle" style={{width:'48px'}} src="logo7e.png" alt="" />
+                <img className="align-middle" style={{ width: '48px' }} src="logo7e.png" alt="" />
             </a>
             <nav id={styles.nav} className={active ? styles.active : ''}>
                 <button aria-label="Abrir Menu" id={styles.btnMobile} aria-haspopup="true" aria-controls="menu" aria-expanded="false" onClick={(e) => toggleMenu(e)}>
                     <span id={styles.hamburger} />
                 </button>
-                <ul id={styles.menu} className={styles.ul} role="menu">                    
-                    <li><a className={styles.a} href="/">Sobre</a></li>
-                    <li><a className={styles.a} href="/">Serviços</a></li>
-                    <li><a className={styles.a} href="/">Seja um parceiro</a></li>
-                    <li><a className={styles.a} href="/">Contato</a></li>                    
+                <ul id={styles.menu} className={styles.ul} role="menu">
+                    <li>
+                        <Link href="/">
+                            <a className={`${styles.a} ${useRouter().pathname === "/" ? styles.active : ""}`}>
+                                Home
+                            </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/servicos">
+                            <a className={`${styles.a} ${useRouter().pathname === "/servicos" ? styles.active : ""}`}>
+                                Serviços
+                            </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="parceiros">
+                            <a className={`${styles.a} ${useRouter().pathname === "/parceiros" ? styles.active : ""}`}>
+                                Seja um parceiro
+                            </a>
+                        </Link>
+                    </li>
                 </ul>
             </nav>
         </header>

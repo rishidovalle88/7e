@@ -3,6 +3,10 @@
     padding: 0px;
 }
 
+.ul li{
+    margin-left: 10px;
+}
+
 .a {
     color: #3B3B3B;
     text-decoration: none;
@@ -15,6 +19,12 @@
     background: rgba(0, 0, 0, 0.09);
     color: #3B3B3B;
     transform: scale(1.1);    
+}
+
+.active {
+    background: rgba(0, 0, 0, 0.09);
+    color: #3B3B3B;
+    transform: scale(1.1);  
 }
 
 #logo {
