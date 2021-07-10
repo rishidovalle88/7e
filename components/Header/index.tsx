@@ -32,10 +32,10 @@ const Header = () => {
                 <button aria-label="Abrir Menu" id={styles.btnMobile} aria-haspopup="true" aria-controls="menu" aria-expanded="false" onClick={(e) => toggleMenu(e)}>
                     <span id={styles.hamburger} />
                 </button>
-                <ul id={styles.menu} className={styles.ul} role="menu">
+                <ul id={styles.menu} className={styles.ul} role="menu">                    
                     <li><a className={styles.a} href="/">Sobre</a></li>
-                    <li><a className={styles.a} href="/">Produtos</a></li>
-                    <li><a className={styles.a} href="/">Portfólio</a></li>
+                    <li><a className={styles.a} href="/">Serviços</a></li>
+                    <li><a className={styles.a} href="/">Seja um parceiro</a></li>
                     <li><a className={styles.a} href="/">Contato</a></li>                    
                 </ul>
             </nav>

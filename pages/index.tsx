@@ -7,8 +7,9 @@ import styles from '../styles/Home.module.css'
 import Layout from '../components/Layout'
 import BlockForm from '../components/BlockForm'
 import BlockContact from '../components/BlockContact'
+import { GetServerSideProps } from 'next'
 
-export default function Home() {
+export default function Home({post}) {
 
   const [cursos] = useState([1, 2, 3])
 
@@ -24,4 +25,12 @@ export default function Home() {
       </div>
     </Layout>
   )
+}
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  return {
+    props: {
+      post: ''
+    }
+  }
 }

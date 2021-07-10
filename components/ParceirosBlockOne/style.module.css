@@ -1,0 +1,11 @@
+.firstBlock {
+    height: calc(100% + 70px);
+    border: none;
+    /* margin-top: -1%; */
+    margin: auto;
+    /* width: 100vw; */
+    background-image: url(../../public/wave-gold-down.svg);
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
