@@ -3,7 +3,7 @@ import styles from './styles.module.css'
 
 const PartnerBlockThree = () => {
     return (
-        <div className="container">
+        <div className="container" id="form">
             <div className="my-5 d-flex justify-content-center align-items-center">
                 <form className="row g-3 bg-white rounded shadow p-4">
                     <div className="mb-3">

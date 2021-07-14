@@ -4,9 +4,9 @@ import styles from './styles.module.css'
 const BlockForm = () => {
 
     return (
-        <div className="overflow-hidden shadow-lg">
-            <div className="row">
-                <div className="d-none d-sm-flex col-md-5 d-flex justify-content-between align-items-center" style={{ background: "#3B3B3B", height: "500px" }}>
+        <div id="form" className={`overflow-hidden shadow-lg ${styles.container}`}>
+            <div className="row h-100">
+                <div className="d-none d-sm-flex col-md-5 h-100 d-flex justify-content-between align-items-center" style={{ background: "#3B3B3B", height: "500px" }}>
                     <div className="text-center">
                         <h1 className="display-3 text-white">Fale com um especialista</h1>
                         <h5 className="text-white mt-5">
@@ -15,7 +15,7 @@ const BlockForm = () => {
                     </div>
                 </div>
                 <div className={`${styles.bg} col col-xs-12 col-md-7 d-flex justify-content-center align-items-center`}>
-                    <form className={`bg-white p-5 shadow-lg`}> 
+                    <form className={`bg-white p-5 shadow`}> 
                         <div className="mb-3">
                             <label htmlFor="email" className="form-label">Email</label>
                             <input type="email" className="form-control" id="email" aria-describedby="emailHelp" />

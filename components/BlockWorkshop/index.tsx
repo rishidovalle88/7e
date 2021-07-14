@@ -44,7 +44,7 @@ const BlockWorkshop = () => {
     ])
 
     return (
-        <div className={`overflow-hidden mt-5 mb-5 ${styles.bgImage}`}>
+        <div className={`d-flex justify-content-center align-items-center overflow-hidden mt-5 mb-5 ${styles.bgImage}`}>
             <div className="container">
                 <div className="row">
                     <div className="col-12 mb-3 mt-3 text-center">

@@ -1,12 +1,89 @@
 .fixed {
-    position: fixed;
-    top: 50%;
-    left: 40px;
-    z-index:1;
+  position: fixed;
+  top: 80%;
+  left: 40px;
+  z-index: 1;
+  height: 100%;
+}
+
+.image {
+  background-image: url(../../public/undraw_Progress_data_re_rv4p.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom;
+  height: 50vh;
+}
+
+.btnIcon {
+  border: none;
+  opacity: 0;
+  float: left;
+  transition: .5s;
+  margin-left: -50px;
+  height: 60px;
+  width: 60px;
+  background-color: #CEA119;
+  color: white;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.btn {
+  width: 300px;
+  height: 60px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background-color: #3F3D56;
+  color: white;
+  font-size: 1.1rem;
+  transition: .2s;
+}
+
+.btnGroup {
+  margin: 50px;
+}
+
+.btnGroup:hover .btnIcon {
+  opacity: 1;
+  transition: .5s;
+  margin-left: -10px;
+}
+
+.btnGroup:hover .btn {
+  margin-left: 0px;
+  width: 250px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.btnGroup.active .btnIcon{
+  opacity: 1;
+  transition: .5s;
+  margin-left: -10px;
+  height: 80px;
+}
+
+.btnGroup.active .btn{
+  margin-left: 0px;
+  width: 250px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  height: 80px;
+}
+
+@media (max-width: 900px) {
+  .fixed {
+    display: none;
+  }
+}
+
+@media (max-width: 1280px) {
+  .btn {
+    width: 150px;
   }
 
-  @media (max-width: 900px) {
-    .fixed{
-      display: none;
-    }
+  .btnGroup:hover>.btn {
+    width: 150px;
   }
+}

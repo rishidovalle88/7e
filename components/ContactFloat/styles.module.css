@@ -1,0 +1,52 @@
+.container {
+    position: fixed;
+    right: 10px;
+    bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    width: 80px;
+    height: 120px;
+    z-index: 10;
+}
+
+.contact {
+    border: none;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    transition: .2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.contact:hover{
+    transform: scale(1.1);
+}
+
+.whatsapp {
+    background-color: #00BFA5;
+}
+
+.email {
+    background-color: #CA9E19;
+    transform-origin: bottom;    
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: ease-in;
+}
+
+@keyframes bounce {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(-10px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    57%  { transform: scale(1,1)    translateY(-7px); }
+    64%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}

@@ -6,6 +6,7 @@ import Header from '../Header';
 import SidenavMenu from '../SidenavMenu';
 import styles from './style.module.css'
 import Footer from '../Footer';
+import ContactFloat from '../ContactFloat';
 
 
 interface LayoutProps {
@@ -19,33 +20,35 @@ const Layout = ({ title, children }: LayoutProps) => {
 
     return (
         <>
-            <Head>
-                <title>{title}</title>
-            </Head>
-            <ToastContainer />
-            <Header />
+            <div className={`${styles.blackMode}`}>
+                <Head>
+                    <title>{title}</title>
+                </Head>
+                <ToastContainer />
+                <Header />
+                <ContactFloat />
 
-            {isAuth ? (
-                <>
-                    <SidenavMenu />
-                    <main className={styles.main}>
+
+                {isAuth ? (
+                    <>
+                        <SidenavMenu />
+                        <main className={styles.main}>
+                            {children}
+                        </main>
+                    </>
+                ) : (
+
+                    // <div className="container is-max-widescreen">
+                    <>
                         {children}
-                    </main>
-                </>
-            ) : (
+                    </>
+                    // </div>
+                )}
+                {/* {isAuth && (<NavbarMenu />)} */}
 
-                // <div className="container is-max-widescreen">
-                <>
-                    {children}
-                </>
-                // </div>
-            )}
+                {/* <Footer /> */}
 
-
-
-            {/* {isAuth && (<NavbarMenu />)} */}
-
-            {/* <Footer /> */}
+            </div>
         </>
 
     )

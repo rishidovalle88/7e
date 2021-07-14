@@ -4,6 +4,11 @@
 	padding: 40px;
 }
 
+.blackMode {
+	height: 100vh;
+	background-color: #f5f5f5;
+}
+
 @media screen and (max-width: 768px) {	
 	.main {
 		margin-left: 0px;

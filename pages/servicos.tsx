@@ -1,24 +1,27 @@
 import { GetServerSideProps } from 'next'
 import React from 'react'
 import Layout from '../components/Layout'
+import ServiceApresentation from '../components/ServiceApresentation'
 import ServicesCommercialAdvice from '../components/ServicesCommercialAdvice'
 import ServicesFloatMenu from '../components/ServicesFloatMenu'
 import ServicesTrainingInCompany from '../components/ServicesTrainingInCompany'
-import styles from './styles.module.css'
 
-const servicos = () => {
+const Servicos = () => {
     return (
         <Layout title="Serviços">
+            <ServiceApresentation />
+
             <ServicesFloatMenu />
-            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" className="scrollspy-example">
+            {/* <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" className="scrollspy-example">
                 <ServicesCommercialAdvice />
                 <ServicesTrainingInCompany />
-            </div>
+            </div> */}
+
         </Layout>
     )
 }
 
-export default servicos
+export default Servicos
 
 
 export const getServerSideProps: GetServerSideProps = async () => {

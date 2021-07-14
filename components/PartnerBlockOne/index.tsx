@@ -13,10 +13,10 @@ const PartnerFirstBlock = () => {
                 </div>
 
                 <div className="col-12 d-flex justify-content-center">
-                    <button type="submit" className="btn btn-secondary mb-5 shadow">
+                    <a href="#form" className="btn btn-secondary mb-5 shadow">
                         Seja um professor parceiro
                         <i className="mx-2 fas fa-arrow-circle-down"></i>
-                    </button>
+                    </a>
                 </div>
             </div>
             <div className="container">

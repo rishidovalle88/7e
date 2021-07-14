@@ -1,0 +1,8 @@
+.container {
+    height: calc(100vh - 70px);
+    background-image: url(../../public/undraw_Progress_data_re_rv4p.svg), url(../../public/wave-dark-gray-down.svg), url(../../public/wave-mostarda-up.svg);
+    background-size: 30% 30%, cover, cover;
+    background-repeat: no-repeat;
+    background-position: bottom right, top, top;
+    background-color: white;
+}

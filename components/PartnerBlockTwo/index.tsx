@@ -25,10 +25,10 @@ const PartnerBlockTwo = () => {
                     </div>
 
                     <div className="col-12 d-flex justify-content-center">
-                        <button type="submit" className="btn my-5 shadow btn-lg" style={{ backgroundColor: "#FFE41E", color: "#000000" }}>
+                        <a href="#form" className="btn my-5 shadow btn-lg" style={{ backgroundColor: "#FFE41E", color: "#000000" }}>
                             Cadastrar
                             <i className="mx-2 fas fa-arrow-circle-down"></i>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

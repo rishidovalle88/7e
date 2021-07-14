@@ -23,7 +23,7 @@ const BlockAbout = () => {
                     Somos uma consultoria empresarial que atua dentro das organizações, assessorando na gestão de negócios, <strong>aperfeiçoando</strong> e indicando estratégias de <strong>marketing, vendas</strong>, seleção de profissionais e qualificação.
                 </h2>
                 <div className="d-grid gap-2 col-6 mx-auto mt-5 mb-5">
-                    <button className="btn btn-outline-light" type="button">Saiba como</button>
+                    <a className="btn btn-outline-light" type="button" href="#form">Saiba como</a>
                 </div>
                 <br/><br/><br/>
             </div>

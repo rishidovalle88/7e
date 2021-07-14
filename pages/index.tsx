@@ -9,6 +9,7 @@ import BlockForm from '../components/BlockForm'
 import BlockContact from '../components/BlockContact'
 import { GetServerSideProps } from 'next'
 
+
 export default function Home({post}) {
 
   const [cursos] = useState([1, 2, 3])
@@ -21,7 +22,7 @@ export default function Home({post}) {
         <BlockServices />
         <BlockWorkshop />
         <BlockForm/>
-        <BlockContact />
+        <BlockContact />        
       </div>
     </Layout>
   )

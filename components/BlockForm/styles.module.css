@@ -1,3 +1,7 @@
+.container {
+    height: 100vh;
+}
+
 .bg{
     background-image: url(../../public/undraw_Browsing_online_re_umsa.svg), url(../../public/undraw_online_message_re_3m5v.svg);
     background-repeat: no-repeat;
