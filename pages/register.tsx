@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { PhoneMask, ValidateEmail } from '../Helpers/Validators'
 import { useForm, Controller } from "react-hook-form";
 import GoHome from '../components/GoHome';
+import { GetServerSideProps } from 'next';
 
 interface LoginProps {
     name: string;
@@ -151,3 +152,10 @@ export default function Register() {
     );
 }
 
+export const getServerSideProps: GetServerSideProps = async () => {
+    return {
+      props: {
+        post: ''
+      }
+    }
+  }

@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import React, { useState } from 'react'
+import BlockForm from '../BlockForm';
 import ServicesCommercialAdvice from '../ServicesCommercialAdvice';
 import ServicesTrainingInCompany from '../ServicesTrainingInCompany';
 import styles from './styles.module.css'
@@ -9,9 +11,9 @@ const ServicesFloatMenu = () => {
 
     return (
         // <div className={`w-25 ${styles.fixed}`} >
-        <div className="container h-100">
+        <div className="container h-100" id="servicesDescription" data-bs-spy="scroll" data-bs-target="#servicesDescription" data-bs-offset="0">
             <div className="row">
-                <div className="col col-sm-12 d-flex flex-row justify-content-center align-items-center">
+                <div className="d-flex flex-sm-column flex-md-row justify-content-center align-items-center">
                     <div className={`${styles.btnGroup} ${selected === 1 ? styles.active : ""}`} onClick={() => setSelected(1)}>
                         <button className={styles.btnIcon}><i className="fas fa-briefcase"></i></button>
                         <button className={styles.btn}>
@@ -25,14 +27,21 @@ const ServicesFloatMenu = () => {
                         </button>
                     </div>
                 </div>
-            
+
                 <div className="col col-xs-12">
                     {selected === 1 ? (
                         <ServicesCommercialAdvice />
                     ) : (
                         <ServicesTrainingInCompany />
                     )}
-
+                </div>
+                <div className="col-12 mt-1 d-flex justify-content-center align-items-center">
+                    <Link href="/contato">
+                        <a className="btn btn-success mb-5 shadow text-center d-flex justify-content-center align-items-center">
+                            Registre seu interesse em melhorar seus resultados
+                            <i className="mx-2 fas fa-arrow-circle-right" style={{ fontSize: "1rem" }}></i>
+                        </a>
+                    </Link>
                 </div>
             </div>
 

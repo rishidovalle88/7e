@@ -46,13 +46,11 @@ const ServicesCommercialAdvice = () => {
         <div className={`shadow ${styles.container}`} id="ac">
             <h4 className="display-6 text-center">Nossos <strong>Especialistas</strong> promovem: </h4>
             <br />
-            <blockquote className="text-center">A clarificação das meta que devem ser bem claras, bem definidas e alinhadas com os propósitos, missão, visão e valores da empresa, sendo o papel do Consultor torná-la estruturada com:
-
-               <em>Especificidade; Mensuração; Quantificação, qualificação;
-
-Atratividade, compatibilidade com os valores e
-
-Realismo.</em> 
+            <blockquote className="text-center">
+                <strong>- Clarificação das metas</strong>, tornando-as claras, bem definidas e alinhadas com o propósito, missão, visão e valores da empresa, 
+                estruturando-as com:
+                <br/><br/>
+               <p> <em> Especificidade; Mensuração; Quantificação, Qualificação; Atratividade, Compatibilidade com os valores e realismo. </em></p> 
             </blockquote>
             <div className="row mt-5">
                 {ws.map((item) => {

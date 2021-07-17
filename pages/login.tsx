@@ -3,6 +3,7 @@ import React, { ChangeEvent, useState } from 'react';
 import Input from '../components/Input';
 import Link from 'next/link'
 import GoHome from '../components/GoHome';
+import { GetServerSideProps } from 'next';
 
 interface LoginProps {
     username: string;
@@ -84,3 +85,11 @@ export default function Login(props: LoginProps) {
         </>
     );
 }
+
+export const getServerSideProps: GetServerSideProps = async () => {
+    return {
+      props: {
+        post: ''
+      }
+    }
+  }

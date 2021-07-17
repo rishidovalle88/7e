@@ -41,7 +41,7 @@
 }
 
 .btnGroup {
-  margin: 50px;
+  margin: 50px 10px 10px 50px;
 }
 
 .btnGroup:hover .btnIcon {
@@ -70,6 +70,37 @@
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
   height: 80px;
+}
+
+@media (max-width: 600px) {
+  .fixed {
+    display: none;
+  }
+  .btn {
+    width: 100px;
+  }
+  
+  .btnGroup:hover .btn {
+    margin-left: 0px;
+    width: 50px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  
+  .btnGroup.active .btnIcon{
+    opacity: 1;
+    transition: .5s;
+    margin-left: -10px;
+    height: 80px;
+  }
+  
+  .btnGroup.active .btn{
+    margin-left: 0px;
+    width: 100px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    height: 80px;
+  }
 }
 
 @media (max-width: 900px) {

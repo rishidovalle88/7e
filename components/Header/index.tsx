@@ -55,6 +55,13 @@ const Header = () => {
                             </a>
                         </Link>
                     </li>
+                    <li>
+                        <Link href="contato">
+                            <a className={`${styles.a} ${useRouter().pathname === "/contato" ? styles.active : ""}`}>
+                                Contato
+                            </a>
+                        </Link>
+                    </li>
                 </ul>
             </nav>
         </header>

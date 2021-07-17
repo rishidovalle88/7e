@@ -8,17 +8,17 @@ interface ServicesTrainingInCompanyProps {
 const ServicesTrainingInCompany = () => {
     const [ws, setWs] = useState<ServicesTrainingInCompanyProps[]>([
         {
-            title: "Identificamos suas necessidades e desenvolvemos treinamentos específicos e adequados aos seus colaboradores e ao Seu Negócio;"
+            title: "Identificamos suas necessidades e desenvolvemos treinamentos específicos e adequados aos seus colaboradores e ao seu negócio;"
         },
         {
-            title: "Metodologia problem-based learning com Aprendizagem Compartilhada / Ciclos de Aprendizagens Dinâmicos e com foco em Resultados;"
+            title: "Metodologia problem-based learning com Aprendizagem Compartilhada / Ciclos de Aprendizagens Dinâmicas e com foco em resultados;"
         },
         {
             title: "Mentoria para Lideres: As ferramentas e técnicas, elevam o nível de comprometimento do indivíduo, onde as soluções e ações são extraídas dele mesmo, pois é ele o maior conhecedor de sua realidade no que se refere a ambiente, necessidades, crenças e valores. "
         },
-        {
-            title: "Preparamos instrutores para atender as necessidades que você precisa desde qualificação técnica a formação e/ou capacitação individual."
-        },
+        // {
+        //     title: "Preparamos instrutores para atender as necessidades que você precisa desde qualificação técnica a formação e/ou capacitação individual."
+        // },
     ])
     return (
         <div className={`shadow ${styles.container}`} id="tc">
@@ -26,15 +26,15 @@ const ServicesTrainingInCompany = () => {
                 Nossos Treinamentos promovem:
                 <br />
             </h4>
-            <blockquote className="text-center">A <strong>potencialização de <em>Resultados</em></strong>, por meio do uso  de recursos individuais já existentes, desenvolvendo e atribuindo novas habilidades.
+            <blockquote className="text-center">A <strong>potencialização de <em>resultados</em></strong>, por meio do uso  de recursos individuais já existentes, desenvolvendo e atribuindo novas habilidades.
 
-Com o uso de <em>programação neurolinguística (PNL)</em> e técnicas específicas para <em>alta performance</em>, garantimos resultados <em>extraordinários</em> que irão impactar diretamente na Evolução de seus Negócios.
+Com o uso de <em>programação neurolinguística (PNL)</em> e técnicas específicas para <strong>alta performance</strong>, garantimos <strong>resultados extraordinários</strong> que irão impactar diretamente na <strong>evolução de seus negócios.</strong>
                 
             </blockquote>
             <div className="row mt-5">
                 {ws.map((item) => {
                     return (
-                        <div key={item.title} className="col col-12 col-md-6">
+                        <div key={item.title} className="col col-12 col-md-12">
                             <div className="card  border-0 mx-5" style={{ maxWidth: '100%' }}>
                                 <div className="row g-0">
                                     <div className="col-2 col-md-1 mt-3">
