@@ -7,6 +7,7 @@ import SidenavMenu from '../SidenavMenu';
 import styles from './style.module.css'
 import Footer from '../Footer';
 import ContactFloat from '../ContactFloat';
+import BlockContact from '../BlockContact';
 
 
 interface LayoutProps {
@@ -45,7 +46,7 @@ const Layout = ({ title, children }: LayoutProps) => {
                     // </div>
                 )}
                 {/* {isAuth && (<NavbarMenu />)} */}
-
+                <BlockContact />
                 <Footer />
 
             </div>

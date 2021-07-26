@@ -6,7 +6,6 @@ import styles from '../styles/Home.module.css'
 
 import Layout from '../components/Layout'
 import BlockForm from '../components/BlockForm'
-import BlockContact from '../components/BlockContact'
 import { GetServerSideProps } from 'next'
 
 
@@ -21,8 +20,7 @@ export default function Home({post}) {
         <BlockAbout />
         <BlockServices />
         <BlockWorkshop />
-        <BlockForm/>
-        <BlockContact />        
+        <BlockForm/>                
       </div>
     </Layout>
   )

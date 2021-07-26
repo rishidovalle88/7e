@@ -6,7 +6,7 @@ const BlockForm = () => {
     return (
         <div id="form" className={`overflow-hidden shadow-lg ${styles.container}`}>
             <div className="row h-100">
-                <div className="d-none d-sm-flex col-md-5 h-100 d-flex justify-content-between align-items-center" style={{ background: "#3B3B3B", height: "500px" }}>
+                <div className="d-none d-md-flex col-md-5 h-100 d-flex justify-content-between align-items-center" style={{ background: "#3B3B3B", height: "500px" }}>
                     <div className="text-center">
                         <h1 className="display-3 text-white">Fale com um especialista</h1>
                         <h5 className="text-white mt-5">

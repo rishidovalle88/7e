@@ -27,7 +27,8 @@ const Header = () => {
     return (
         <header id={styles.header}>
             <a id={styles.logo}>
-                <img className="align-middle" style={{ width: '48px' }} src="logo7e.png" alt="" />
+                <img className="align-middle" style={{ width: '48px', marginTop: "-10px", marginRight: "10px" }} src="logo7e.png" alt="" />
+                <span className="display-6">Consultoria</span>                
             </a>
             <nav id={styles.nav} className={active ? styles.active : ''}>
                 <button aria-label="Abrir Menu" id={styles.btnMobile} aria-haspopup="true" aria-controls="menu" aria-expanded="false" onClick={(e) => toggleMenu(e)}>
